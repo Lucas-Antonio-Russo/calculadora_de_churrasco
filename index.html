@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Churrasco</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagex/png" href="icone.ico">
+</head>
+<body>
+    <div id="fundo_app">
+        <div id="img_fundo">
+            <img src="background.jpeg" alt="Churrasco">
+        </div>
+        <div id="conteudo">
+            <div class="titulo">
+                <p>Calculadora De Churrasco</p>
+            </div>
+            <div class="quantidades">
+                <div>
+                    <div>
+                        <div class="txtTitulo">
+                            <p>Quantidade De Homens:</p>
+                        </div> 
+                        <span id="qtdHomem" contenteditable="true" oninput="aoMudar('qtdHomem')">0</span>
+                        <div class="div_btns">
+                            <button class="btns" id="btn_soma_homem" onclick="somaValores('btn_soma_homem');">+</button>
+                            <button class="btns" id="btn_menos_homem" onclick="somaValores('btn_menos_homem');">-</button>
+                        </div>
+                    </div>
+                        <input type="range" min="0" max="100" value="0" class="slider" id="rangeHomem" oninput="valor_range(this.value,'rangeHomem');">
+                </div>
+            </div>
+            <div class="quantidades">
+                <div>
+                    <div>
+                        <div class="txtTitulo">
+                            <p>Quantidade De Mulheres: </p>
+                        </div>
+                        <span id="qtdMulher" contenteditable="true" oninput="aoMudar('qtdMulher')">0</span>
+                        <div class="div_btns">
+                            <button class="btns" id="btn_soma_mulher" onclick="somaValores('btn_soma_mulher');">+</button>
+                            <button class="btns" id="btn_menos_mulher" onclick="somaValores('btn_menos_mulher');">-</button>
+                        </div>
+                    </div>
+                        <input type="range" min="0" max="100" value="0" class="slider" id="rangeMulher" oninput="valor_range(this.value,'rangeMulher');">
+                </div>
+            </div>
+             <div class="quantidades">
+                <div>
+                    <div>
+                        <div class="txtTitulo">
+                            <p>Quantidade De Criança:</p> 
+                        </div>
+                        <span id="qtdCrianca" contenteditable="true" oninput="aoMudar('qtdCrianca')" >0</span>
+                        <div class="div_btns">
+                            <button class="btns" id="btn_soma_crianca" onclick="somaValores('btn_soma_crianca');">+</button>
+                            <button class="btns" id="btn_menos_crianca" onclick="somaValores('btn_menos_crianca');">-</button>
+                        </div>
+                    </div>
+                        <input type="range" min="0" max="100" value="0" class="slider" id="rangeCrianca" oninput="valor_range(this.value,'rangeCrianca');">
+                </div>
+            </div>
+            <div class="quantidades">
+                <button onclick="calculaChurrasco(),abrirResultado()">CALCULAR QUANTIA DE CARNE!</button>
+            </div>
+            <div class="quantidades">
+                <p id="msg_erro"></p>
+            </div>
+        </div>
+    </div>
+    <div id="resultado">
+        <div class="titulo">
+            <p>Lista de Compras</p>
+        </div>
+        <div id="conteudo_resultado">
+            <div class="txtResultado">
+                <p>Carne Bovina:</p><span class="spanqtd" id="qtdCarne"></span>
+            </div>
+            <div class="txtResultado">
+                <p>Frango: </p><span class="spanqtd" id="qtdFrango"></span>
+            </div>
+            <div class="txtResultado">
+                <p>Linguiça: </p><span class="spanqtd" id="qtdLinguica"></span>
+            </div>
+            <div class="txtResultado">
+                <p>Refrigerante: </p><span class="spanqtd" id="qtdRefri"></span>
+            </div>
+            <div class="txtResultado">
+                <p>Cerveja: </p><span class="spanqtd" id="qtdCerveja"></span>
+            </div>
+            <div class="txtResultado">
+                <button id="btnFechar" onclick="fecharResultado(),calculaChurrasco()">BELEZA, ANOTADO CHEFE!</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
