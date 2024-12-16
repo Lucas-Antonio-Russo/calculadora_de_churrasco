@@ -1,6 +1,6 @@
 # Calculadora de Churrasco 🥩🔥
 
-<b>📍 Descrição:</b><p>Este projeto foi desenvolvido como parte das atividades da disciplina de Programação Web no curso de Análise e Desenvolvimento de Sistemas (ADS). A aplicação é uma calculadora de churrasco criada com HTML, CSS e JavaScript. O objetivo é auxiliar no planejamento de um churrasco, calculando a quantidade ideal de carne, bebidas e acompanhamentos com base no número de participantes (adultos e crianças).</p>
+<b>📍 Descrição:</b><p>Este projeto foi desenvolvido como parte das atividades da disciplina de Programação Web no curso de Análise e Desenvolvimento de Sistemas (ADS). A aplicação é uma calculadora de churrasco criada com HTML, CSS e JavaScript. O objetivo é auxiliar no planejamento de um churrasco, calculando a quantidade ideal de carne e bebidas com base no número de participantes (adultos e crianças).</p>
 
 <b> 🔍 Funcionalidades </b>
 - ✔ Cálculo de carnes	= Determina a quantidade ideal de carne para adultos e crianças com base em médias gerais.
