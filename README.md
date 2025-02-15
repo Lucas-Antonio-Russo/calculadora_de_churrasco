@@ -15,7 +15,7 @@
 - ✔ JavaScript	para lógica de cálculo e interatividade.
 
  #
-👀 <b><a href="https://shimmering-cassata-fa5a66.netlify.app/" target="_blank">Veja o projeto Calculadora de Churrasco funcionando aqui!</a> </b>
+👀 <b><a href="https://calcula-churrasco.netlify.app/" target="_blank">Veja o projeto Calculadora de Churrasco funcionando aqui!</a> </b>
 
 # 
 <b> 🖼 Imagens do projeto </b> 
